@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>test Website</h1>
+    <script>
+      // define an aobject
+      andres = {
+        nombre: "andres",
+        apellido: "castro",
+      };
+
+      // Create a method for the object
+      andres.rideBike = function () {
+        console.log("riding on my bike");
+      };
+
+      // Call the method making reference to the object
+      andres.rideBike();
+
+      // Defined function that do not belong to any method
+      function cooking(a, b) {
+        result = a + b;
+        return result;
+      }
+
+      // assign the pre-define function to the method
+      andres.cooking = cooking;
+      result = andres.cooking(2, 3);
+      console.log(result);
+
+      // create the function insede the object
+
+      ironman = {
+        fly() {
+          console.log("flying");
+        },
+        name: "Tony",
+        lastName: "Stark",
+
+        fullName() {
+          // Referenciong to the name of the object using this!
+          console.log(this.name + " " + this.lastName);
+        },
+      };
+
+      ironman.fullName();
+    </script>
+  </body>
+</html>

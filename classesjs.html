@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+  </head>
+  <script>
+    class Superhero {
+      // how is build the hero
+      constructor(name, power) {
+        (this.name = name), (this.power = power);
+      }
+      //What the hero can do
+      displayName() {
+        alert(`hi I am ${this.name}`);
+      }
+      showPower() {
+        alert(`my power is ${this.power}`);
+      }
+    }
+
+    const ironman = new Superhero("tony", "fly");
+    const spiderman = new Superhero("peter", "spider powers");
+
+    class Shoes {
+      constructor(size, color, price, quantity) {
+        this.size = size;
+        this.color = color;
+        this.price = price;
+        this.quantity = quantity;
+      }
+
+      editQunatity(newQuantity) {}
+    }
+  </script>
+  <body></body>
+</html>
